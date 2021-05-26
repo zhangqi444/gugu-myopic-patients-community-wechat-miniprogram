@@ -1,0 +1,511 @@
+<template>
+	<view class="container">
+		<uni-popup id="chatGroupPopup" ref="chatGroupPopup" type="bottom">
+			<view class="bottom-popup-container" ref="chatGroupContainer">
+				<view class="chat-group-container">
+					<view class="wx-chat-group-container">
+						<image class="wx-chat-group-cover" :src="wxIconSrc" ></image>
+						<cell class="wx-chat-group" bind:startmessage='startmessage' bind:completemessage="completemessage" plugid='59bce93f97235c332f835f072e732a40'  />
+					</view>
+					<text class="chat-group-text">加入微信群聊</text>
+				</view>
+			</view>
+		</uni-popup>
+		<uni-nav-bar class="nav-bar" :style="{ marginTop: narBarMarginTop, width: narBarWidth }" :fixed="true" right-icon="scan">
+			<view class="header flex row" @click="search">
+				<image class="logo" :src="homeLogoSrc"></image>
+				<search-bar class="search-bar" width="97" placeholder="搜索" disabled="true"></search-bar>
+			</view>
+		</uni-nav-bar>
+		<scroll-view ref="functionTabBar" class="function-tab-bar" :scroll="false" :scroll-x="true" :show-scrollbar="false"
+			:scroll-into-view="functionScrollInto">
+			<view class="function-tab-containter">
+				<view class="function-tab-item-container" v-for="(tab,index) in functionTabList" :key="tab.id" :id="tab.id" 
+					:ref="'functionTabItem'+index" :data-id="index" :data-current="index" @click="onFunctionTabTap(tab)">
+					<image class="function-tab-item-image" :src="tab.icon" mode=""></image>
+					<text class="function-tab-item-title">{{tab.name}}</text>
+				</view>
+			</view>
+		</scroll-view>
+		<view class="tabs">
+			<scroll-view ref="tabbar" id="tab-bar" class="tab-bar" :scroll="false" :scroll-x="true" :show-scrollbar="false"
+			 :scroll-into-view="scrollInto" scroll-anchoring="true">
+				<view class="flex column">
+					<view class="tab-item-containter">
+						<view class="uni-tab-item" v-for="(tab,index) in tabList" :key="tab.id" :id="tab.id" :ref="'tabitem'+index"
+							:data-id="index" :data-current="index" @click="ontabtap">
+							<text class="uni-tab-item-title" :class="tabIndex==index ? 'uni-tab-item-title-active' : ''">{{tab.name}}</text>
+						</view>
+					</view>
+					<view class="scroll-view-indicator">
+						<view ref="underline" class="scroll-view-underline" :class="isTap ? 'scroll-view-animation':''" :style="{left: indicatorLineLeft + 'px', width: indicatorLineWidth + 'px'}"></view>
+					</view>
+				</view>
+			</scroll-view>
+			<view class="tab-bar-line" />
+			<swiper class="tab-box" ref="swiper1" :current="tabIndex" :duration="300" @change="onswiperchange" @transition="onswiperscroll"
+				@animationfinish="animationfinish" @onAnimationEnd="animationfinish">
+				<swiper-item class="swiper-item" v-for="(page, index) in tabList" :key="index">
+					<articleList class="article-list" @loadMore="loadArticleFeed" limit="10" ref="page" :_id="page.id" />
+				</swiper-item>
+			</swiper>
+		</view>
+	</view>
+</template>
+
+<script>
+
+	import { articles, articlesByAnyTags } from '@/common/apis/article';
+	import { ARTICLE_MUTATION_ADD } from '@/store/articleStore';
+	import articleList from '@/components/article-list/index';
+	import searchBar from '@/components/search-bar';
+	import { APP, PAGES, ARTICLE_TYPE } from '@/common/constants';
+	import { getStaticResource } from '@/common/util';
+	
+	// 缓存每页最多
+	const MAX_CACHE_DATA = 100;
+	// 缓存页签数量
+	const MAX_CACHE_PAGE = 3;
+	const TAB_PRELOAD_OFFSET = 1;
+
+	export default {
+		components: { articleList, searchBar },
+		data() {
+			return {
+				functionTabList: [
+					{ id: "tab01", name: '近视评测', icon: getStaticResource('home-survey'), url: PAGES.SURVEY.path },
+					{ id: "tab02", name: '常用资料', icon: getStaticResource('home-wiki'), url: PAGES.WIKI.path },
+					{ id: "tab03", name: '加入群聊', icon: getStaticResource('home-chatgroup'), click: () => this.$refs.chatGroupPopup.open() },
+					{ id: "tab04", name: '记录管理', icon: getStaticResource('home-exam-record'), url: PAGES.EXAM_RECORD.path },
+				],
+				tabList: [
+					{ id: "tab01", name: '全部' },
+					{ id: "tab02", name: 'OK镜', tags: ['OK镜'] }, 
+					{ id: "tab03", name: '阿托品', tags: ['低浓度阿托品'] }, 
+					{ id: "tab04", name: '哺光仪', tags: ['哺光仪'] }, 
+					{ id: "tab05", name: '综合', tags: ['近视防控综合'] },
+				],
+				tabIndex: 0, // 数据加载时通过异步实现，先切换tab，然后再通知子组件加载数据
+				cacheTab: [],
+				scrollInto: "",
+				navigateFlag: false,
+				indicatorLineLeft: 0,
+				indicatorLineWidth: 0,
+				isTap: false,
+				limit: 10, // page size
+				sharedArticle: {},
+			}
+		},
+		computed: {
+			narBarMarginTop() {
+				const menuButton = uni.getMenuButtonBoundingClientRect();
+				return (menuButton.top + menuButton.height / 2 - 14.5) * 2 + 'rpx';
+			},
+			narBarWidth() {
+				const menuButton = uni.getMenuButtonBoundingClientRect();
+				return (menuButton.left - 4) * 2 + 'rpx';
+			},
+			wxIconSrc() {
+				return getStaticResource('wx-icon');
+			},
+			homeLogoSrc() {
+				return getStaticResource('home-logo');
+			},
+		},
+		async onReady() {	
+			this._lastTabIndex = 0;
+			this.swiperWidth = 0;
+			this.tabbarWidth = 0;
+			this.tabListSize = {};
+			this._touchTabIndex = 0;
+
+			this.pageList = this.$refs.page;
+			this.switchTab(this.tabIndex);
+
+			this.selectorQuery();
+			
+			uni.showShareMenu({
+				withShareTicket: true,
+				menus: ['shareAppMessage', 'shareTimeline'],
+				title: APP.APP_NAME,
+				path: PAGES.HOME.path,
+				content: APP.SLOGAN,
+			});
+		},
+		onShareAppMessage(res) {
+		    if (res.from === 'menu') {// 来自页面内分享按钮
+				return {
+					title: APP.APP_NAME,
+					path: PAGES.HOME.path,
+					content: APP.SLOGAN,
+				}
+		    }
+		},
+		methods: {
+			search() {
+				uni.navigateTo({ url: PAGES.SEARCH.path });
+			},
+			ontabtap(e) {
+				let index = e.target.dataset.current || e.currentTarget.dataset.current;
+				//let offsetIndex = this._touchTabIndex = Math.abs(index - this._lastTabIndex) > 1;
+
+				// #ifdef APP-PLUS || H5 || MP-WEIXIN || MP-QQ
+				this.isTap = true;
+				var currentSize = this.tabListSize[index];
+				this.updateIndicator(currentSize.left, currentSize.width);
+				this._touchTabIndex = index;
+				// #endif
+
+				this.switchTab(index);
+			},
+			onswiperchange(e) {
+				// 注意：百度小程序会触发2次
+
+				// #ifndef APP-PLUS || H5 || MP-WEIXIN || MP-QQ
+				let index = e.target.current || e.detail.current;
+				this.switchTab(index);
+				// #endif
+			},
+			onswiperscroll(e) {
+				if (this.isTap) {
+					return;
+				}
+
+				var offsetX = e.detail.dx;
+				var preloadIndex = this._lastTabIndex;
+				if (offsetX > TAB_PRELOAD_OFFSET) {
+					preloadIndex++;
+				} else if (offsetX < -TAB_PRELOAD_OFFSET) {
+					preloadIndex--;
+				}
+				if (preloadIndex === this._lastTabIndex || preloadIndex < 0 || preloadIndex > this.pageList.length - 1) {
+					return;
+				}
+
+				this.tabIndex = preloadIndex;
+				if (this.pageList[preloadIndex].dataList.length === 0) {
+					this.loadTabData(preloadIndex);
+				}
+
+				// #ifdef APP-PLUS || H5 || MP-WEIXIN || MP-QQ
+				var percentage = Math.abs(this.swiperWidth / offsetX);
+				var currentSize = this.tabListSize[this._lastTabIndex];
+				var preloadSize = this.tabListSize[preloadIndex];
+				var lineL = currentSize.left + (preloadSize.left - currentSize.left) / percentage;
+				var lineW = currentSize.width + (preloadSize.width - currentSize.width) / percentage;
+				this.updateIndicator(lineL, lineW);
+				// #endif
+			},
+			animationfinish(e) {
+				// #ifdef APP-PLUS || H5 || MP-WEIXIN || MP-QQ
+				let index = e.detail.current;
+				if (this._touchTabIndex === index) {
+					this.isTap = false;
+				}
+				this._lastTabIndex = index;
+				this.switchTab(index);
+				this.updateIndicator(this.tabListSize[index].left, this.tabListSize[index].width);
+				// #endif
+			},
+			selectorQuery() {
+				// #ifdef APP-NVUE
+				dom.getComponentRect(this.$refs.tabbar, res => {
+					this.tabbarWidth = res.size.width;
+				});
+				dom.getComponentRect(this.$refs['swiper1'], res => {
+					this.swiperWidth = res.size.width;
+				});
+				// for (var i = 0; i < this.tabList.length; i++) {
+				// 	this.getElementSize(dom, this.$refs['tabitem' + i][0], i);
+				// }
+				// 因 nvue 暂不支持 class 查询
+				var queryTabSize = uni.createSelectorQuery().in(this);
+				for (var i = 0; i < this.tabList.length; i++) {
+				  queryTabSize.select('#' + this.tabList[i].id).boundingClientRect();
+				}
+				queryTabSize.exec(rects => {
+				  rects.forEach((rect) => {
+					this.tabListSize[rect.dataset.id] = rect;
+				  })
+				  this.updateIndicator(this.tabListSize[this.tabIndex].left, this.tabListSize[this.tabIndex].width);
+				  this.switchTab(this.tabIndex);
+				});
+				// #endif
+
+				// #ifdef MP-WEIXIN || H5 || MP-QQ
+				uni.createSelectorQuery().in(this).select('.tab-box').fields({
+					dataset: true,
+					size: true,
+				}, (res) => {
+					this.swiperWidth = res.width;
+				}).exec();
+				uni.createSelectorQuery().in(this).selectAll('.uni-tab-item').boundingClientRect((rects) => {
+					rects.forEach((rect) => {
+						this.tabListSize[rect.dataset.id] = rect;
+					})
+					this.updateIndicator(this.tabListSize[this.tabIndex].left, this.tabListSize[this.tabIndex].width);
+				}).exec();
+				// #endif
+			},
+			getElementSize(dom, ref, id) {
+				dom.getComponentRect(ref, res => {
+					this.tabListSize[id] = res.size;
+				});
+			},
+			updateIndicator(left, width) {
+				this.indicatorLineLeft = left + 24.5;
+				this.indicatorLineWidth = width - 49;
+			},
+			switchTab(index) {
+				const isSwitchToSameTab = index === this.tabIndex;
+				this.tabIndex = index;
+				
+				if (this.pageList[index].dataList.length === 0) {
+					this.loadTabData(index);
+				}
+
+				if (isSwitchToSameTab) return;
+
+				// #ifdef APP-NVUE
+				this.scrollTabTo(index);
+				// #endif
+				// #ifndef APP-NVUE
+				this.scrollInto = this.tabList[index].id;
+				// #endif
+
+			},
+			scrollTabTo(index) {
+				const el = this.$refs['tabitem' + index][0];
+				let offset = 0;
+				// TODO fix ios offset
+				if (index > 0) {
+					offset = this.tabbarWidth / 2 - this.tabListSize[index].width / 2;
+					if (this.tabListSize[index].right < this.tabbarWidth / 2) {
+						offset = this.tabListSize[0].width;
+					}
+				}
+				dom.scrollToElement(el, {
+					offset: -offset
+				});
+			},
+			loadTabData(index) {
+				this.pageList[index].$refs.list.loadMore();
+			},
+			clearTabData(index) {
+				this.pageList[index].clear();
+			},
+			async loadArticleFeed(id, defaultOption, callback) {
+				try {
+					const tags = this.tabList[this.tabIndex].tags;
+					const option = { ...defaultOption, sort: { 'createdAt': -1 } };
+					const condition = { type: ARTICLE_TYPE.DEFAULT };
+					var articlesResult;
+					if (tags && tags.length > 0) {
+						articlesResult = await articlesByAnyTags(tags, option, condition);
+						articlesResult = articlesResult && articlesResult.data && articlesResult.data.articlesByAnyTags || [];
+					} else {
+						articlesResult = await articles(option, condition);
+						articlesResult = articlesResult && articlesResult.data && articlesResult.data.articles || [];
+					}						
+					this.$store.commit(ARTICLE_MUTATION_ADD, { items: articlesResult });
+					callback(articlesResult);
+				} catch(e) {
+					console.error(e);
+					callback(null);
+				}
+			},
+			onFunctionTabTap(tab) {
+				!!tab.url ? uni.navigateTo({ url: tab.url }) : tab.click(tab);
+			}
+		}
+	}
+</script>
+
+<style>
+	page {
+		width: 100%;
+		min-height: 100%;
+		display: flex;
+	}
+	
+	.container {
+		width: 100%;
+	}
+	
+	.nav-bar {
+		margin-top: 49px;
+		margin-bottom: 20px;
+	}
+	
+	.header {
+		padding-left: 24px;
+		height: 35px;
+		align-items: center;
+	}
+
+	.logo {
+		width: 130.5px;
+		height: 31.5px;
+		margin-right: 9px;
+	}
+	
+	.search-bar {
+		flex: 1;
+	}
+
+	.tabs {
+		flex: 1;
+		flex-direction: column;
+		overflow: hidden;
+		background-color: #ffffff;
+	}
+	
+	.function-tab-bar {
+		width: 100%;
+		padding: 0 0 10px 0;
+		border-bottom-width: 6px;
+		border-color: #F5F5F5;
+	}
+	
+	.function-tab-containter {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		white-space: nowrap;
+		margin: 0 15rpx;
+		width: 720rpx;
+	}
+	
+	.function-tab-item-container {
+		display: flex;
+		flex-wrap: nowrap;
+		width: 180rpx;
+		height: 146rpx;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.function-tab-item-title {
+		color: #2E2E2E;
+		font-size: 28rpx;
+		line-height: 40rpx;
+		flex-wrap: nowrap;
+		font-weight: normal;
+		margin-top: 14rpx;
+	}
+	
+	.function-tab-item-image {
+		height: 92rpx;
+		width: 92rpx;
+	}
+
+	/* #ifndef APP-NVUE */
+	.tab-bar ::-webkit-scrollbar {
+		display: none;
+		width: 0 !important;
+		height: 0 !important;
+		-webkit-appearance: none;
+		background: transparent;
+	}
+	/* #endif */
+
+	.scroll-view-indicator {
+		position: relative;
+	}
+
+	.scroll-view-underline {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 24.5;
+		right: 24.5;
+		height: 3px;
+		background-color: #2FCE56;
+	}
+
+	.scroll-view-animation {
+		transition-duration: 0.2s;
+		transition-property: left;
+	}
+
+	.tab-bar-line {
+		height: 1px;
+		background-color: #E4E4E4;
+	}
+
+	.tab-box {
+		flex: 1;
+	}
+	
+	.tab-bar {
+		width: 100%;
+		height: 40px;
+	}
+	
+	.tab-item-containter {
+		display: flex;
+		flex-direction: row;
+		margin: 0 7.5px 0 7.5px;
+		width: 100%;
+		white-space: nowrap;
+	}
+
+	.uni-tab-item {
+		display: flex;
+		flex-wrap: nowrap;
+		width: 90px;
+		height: 37.5px;
+		padding-top: 12px;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.uni-tab-item-title {
+		color: #2E2E2E;
+		font-size: 15px;
+		line-height: 21px;
+		flex-wrap: nowrap;
+		font-weight: normal;
+	}
+
+	.uni-tab-item-title-active {
+		color: #2E2E2E;
+		font-weight: bold;
+	}
+
+	.swiper-item {
+		flex: 1;
+		flex-direction: column;
+		height: 100%;
+		width: 100%;
+	}
+	
+	.article-list {
+		height: 100%;
+		width: 100%;
+	}
+	.bottom-popup-container {
+		display: flex;
+		flex-direction: column;
+		background-color: #fff;
+		padding: 22px;
+	}
+	.chat-group-container {
+		justify-content: center;
+		align-items: center;
+		width: 60px;
+	}
+	.wx-chat-group-cover {
+		height: 36px;
+		width: 36px;
+		background-color: #FFFFFF;
+		z-index: 1;
+		position: absolute;
+		pointer-events: none;
+	}
+	.chat-group-text {
+		font-size: 10px;
+		margin-top: 2px;
+	}
+	
+</style>

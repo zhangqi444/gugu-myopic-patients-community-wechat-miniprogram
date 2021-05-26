@@ -1,0 +1,6 @@
+const config = {
+	GRAPHQL_ENDPOINT: "YOUR_BACKEND_ENDPOINT_FOR_PROD",
+	ALIYUN_OSS_HOST: "YOUR_ALIYUN_OSS_BUCKET_FOR_PROD"
+};
+
+export default config;

@@ -1,0 +1,90 @@
+{
+	"pages": [
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationStyle": "custom",
+			    "mp-weixin": {
+					"usingComponents": {
+						// "cell": "plugin://contactPlugin/cell",
+						"cell": "plugin://chatGroupPlugin/cell"
+					},
+					"disableScroll": true
+			    }
+			}
+		},
+		{ 
+			"path" : "pages/circle/index", 
+			"style": {
+				"navigationStyle": "custom",
+			    "mp-weixin": {
+					"disableScroll": true
+			    }
+			}
+		},
+		{ "path" : "pages/mine/index", "style": { "mp-weixin": { "disableScroll": true } } },
+		{ "path" : "pages/post-publish/index", "style": { "mp-weixin": { "disableScroll": true } } }
+    ],
+	"subpackages": [
+	    {
+			"root": "packageSubPage",
+			"pages": [
+				{
+					"path": "pages/article/index",
+					"style": {
+						"mp-weixin": {
+							"usingComponents": { "txv-video": "plugin://tencentvideo/video" },
+							"disableScroll": true
+						}
+					}
+				},
+				{ "path" : "pages/survey/index", "style": { "mp-weixin": { "disableScroll": true } } },
+				{ "path" : "pages/survey/survey-detail" },
+				{ "path" : "pages/survey/survey-result" },
+				{ "path" : "pages/collect/index" },
+				{ "path" : "pages/search/index", "style": { "mp-weixin": { "disableScroll": true } } },
+				{ "path" : "pages/doctor/index", "style": { "mp-weixin": { "disableScroll": true } } },
+				{ "path" : "pages/wiki/index", "style": { "mp-weixin": { "disableScroll": true } } },
+				{ "path" : "pages/exam-record/index" },
+				{ "path" : "pages/exam-record/exam-record-add-list", "style": { "mp-weixin": { "disableScroll": true } } },
+				{ "path" : "pages/exam-record/exam-record-add" },
+				{ "path" : "pages/exam-record/exam-record-result-list", "style": { "mp-weixin": { "disableScroll": true } } },
+				{ "path" : "pages/exam-record/exam-record-analyze", "style": { "mp-weixin": { "disableScroll": true, "pageOrientation": "landscape" } } },
+				{ "path" : "pages/about/index" },
+				{ "path" : "pages/comment/index", "style": { "mp-weixin": { "disableScroll": true } } },
+				{ "path" : "pages/post/index", "style": { "mp-weixin": { "disableScroll": true } } },
+				{ "path" : "pages/setting/index", "style": { "mp-weixin": { "disableScroll": true } } }
+			]
+	    }
+	],
+	"tabBar": {
+		"color": "#707070",
+		"selectedColor": "#23BE52",
+		"list": [
+			{
+			  "pagePath": "pages/home/index",
+			  "text": "首页",
+			  "iconPath": "static/home@1x.png",
+			  "selectedIconPath": "static/home-selected@1x.png"
+			},
+			{
+			  "pagePath": "pages/circle/index",
+			  "text": "圈子",
+			  "iconPath": "static/circle@1x.png",
+			  "selectedIconPath": "static/circle-selected@1x.png"
+			},
+			{
+			  "pagePath": "pages/mine/index",
+			  "text": "我的",
+			  "iconPath": "static/mine@1x.png",
+			  "selectedIconPath": "static/mine-selected@1x.png"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "咕咕青少年近视防控",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#FFFFFF"
+	}
+}
