@@ -1,1 +1,0 @@
-<view data-event-opts="{{[['tap',[['click',['$event']]]]]}}" class="{{['container flex data-v-434a3f2d',buttonClass]}}" bindtap="__e"><text class="{{['text data-v-434a3f2d',textClass]}}">{{text}}</text></view>

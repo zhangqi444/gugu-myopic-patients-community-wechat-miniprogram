@@ -1,1 +1,0 @@
-<comment-list-item class="vue-ref" vue-id="7972bce0-3" item="{{item}}" data-ref="{{'comment-item'+item._id}}" data-event-opts="{{[['^thumb',[['thumbComment']]]]}}" bind:thumb="__e" bind:__l="__l"></comment-list-item>

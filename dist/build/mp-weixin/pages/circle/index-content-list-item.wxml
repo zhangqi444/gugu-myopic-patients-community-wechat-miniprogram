@@ -1,1 +1,0 @@
-<post-list-item vue-id="23f2883a-4" item="{{item}}" data-ref="{{'item-'+item._id}}" data-event-opts="{{[['^click',[['goTo']]]]}}" bind:click="__e" class="data-v-6592a81a vue-ref" bind:__l="__l"></post-list-item>

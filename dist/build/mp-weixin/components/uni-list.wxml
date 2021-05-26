@@ -1,2 +1,0 @@
-<wxs src="./uni-refresh.wxs" module="refresh"></wxs>
-<scroll-view class="uni-list data-v-0bc8360f" enableBackToTop="{{enableBackToTop}}" scroll-y="{{scrollY}}" data-event-opts="{{[['scrolltolower',[['loadMore',['$event']]]]]}}" bindscrolltolower="__e"><slot></slot></scroll-view>

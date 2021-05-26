@@ -1,6 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "wrapper": "/packageSubPage/components/questions/wrapper"
-  }
-}

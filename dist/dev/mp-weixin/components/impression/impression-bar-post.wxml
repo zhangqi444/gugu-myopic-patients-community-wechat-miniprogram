@@ -1,1 +1,0 @@
-<impression-bar vue-id="eff9b9da-1" showText="{{false}}" item="{{item}}" imageStyle="{{imageStyle}}" textStyle="{{textStyle}}" containerStyle="{{containerStyle}}" innerContainerStyle="{{innerContainerStyle}}" buttonStyle="{{buttonStyle}}" data-event-opts="{{[['^click',[['click']]]]}}" bind:click="__e" class="data-v-bd6b2f5a" bind:__l="__l"></impression-bar>

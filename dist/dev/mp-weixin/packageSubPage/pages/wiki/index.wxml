@@ -1,1 +1,0 @@
-<block wx:if="{{!loading}}"><view class="container data-v-012c2946"><view class="article-list-container data-v-012c2946"><article-list class="article-list data-v-012c2946 vue-ref" vue-id="24598080-1" limit="100" data-ref="articleList" data-event-opts="{{[['^loadMore',[['loadMoreArticles']]]]}}" bind:loadMore="__e" bind:__l="__l"></article-list></view></view></block>

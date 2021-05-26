@@ -1,1 +1,0 @@
-<view data-ref="uni-refresh" hidden="{{!(isShow)}}" class="uni-refresh vue-ref"><slot></slot></view>
