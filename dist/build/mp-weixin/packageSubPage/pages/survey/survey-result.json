@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "article-list": "/components/article-list/index",
+    "echart-element": "/packageSubPage/components/echart-element"
+  }
+}

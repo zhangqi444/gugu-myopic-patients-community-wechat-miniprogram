@@ -1,0 +1,7 @@
+{
+  "disableScroll": true,
+  "usingComponents": {
+    "list": "/components/list/index",
+    "uni-cell": "/components/uni-cell"
+  }
+}

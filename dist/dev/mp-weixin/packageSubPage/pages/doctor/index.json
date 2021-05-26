@@ -1,0 +1,6 @@
+{
+  "disableScroll": true,
+  "usingComponents": {
+    "doctor-details": "/packageSubPage/pages/doctor/doctor-details"
+  }
+}

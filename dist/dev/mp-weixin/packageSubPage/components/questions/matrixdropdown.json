@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "survey-question-wrapper": "/packageSubPage/components/questions/wrapper"
+  }
+}

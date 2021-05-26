@@ -1,0 +1,10 @@
+{
+  "disableScroll": true,
+  "usingComponents": {
+    "index-content-list-item": "/packageSubPage/pages/post/index-content-list-item",
+    "parser": "/components/parser",
+    "content-list": "/components/content-list/index",
+    "comment-list-item": "/packageSubPage/components/comment-list/comment-list-item",
+    "impression-bar-comment": "/components/impression/impression-bar-comment"
+  }
+}

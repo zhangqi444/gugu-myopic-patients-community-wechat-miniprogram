@@ -1,0 +1,10 @@
+{
+  "navigationStyle": "custom",
+  "disableScroll": true,
+  "usingComponents": {
+    "uni-popup": "/components/uni-popup/uni-popup",
+    "cell": "plugin://chatGroupPlugin/cell",
+    "article-list": "/components/article-list/index",
+    "search-bar": "/components/search-bar"
+  }
+}

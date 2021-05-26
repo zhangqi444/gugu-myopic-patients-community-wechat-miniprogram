@@ -1,0 +1,8 @@
+{
+  "disableScroll": true,
+  "usingComponents": {
+    "list": "/components/list/index",
+    "uni-load-more": "/components/uni-load-more",
+    "spliter": "/components/spliter"
+  }
+}

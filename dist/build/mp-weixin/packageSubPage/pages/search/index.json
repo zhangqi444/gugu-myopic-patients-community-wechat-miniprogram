@@ -1,0 +1,8 @@
+{
+  "disableScroll": true,
+  "usingComponents": {
+    "search-bar": "/components/search-bar",
+    "tag": "/components/tag",
+    "article-list": "/components/article-list/index"
+  }
+}

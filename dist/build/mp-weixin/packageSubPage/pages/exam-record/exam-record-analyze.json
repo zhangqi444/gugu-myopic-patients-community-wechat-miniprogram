@@ -1,0 +1,8 @@
+{
+  "disableScroll": true,
+  "pageOrientation": "landscape",
+  "usingComponents": {
+    "echart-element": "/packageSubPage/components/echart-element",
+    "list": "/components/list/index"
+  }
+}

@@ -1,0 +1,21 @@
+
+.container.data-v-434a3f2d {
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	background-color: #23be52;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	border-radius: 15px;
+}
+.text.data-v-434a3f2d {
+	color: #FFFFFF;
+	font-size: 12px;
+	line-height: 17px;
+}
+

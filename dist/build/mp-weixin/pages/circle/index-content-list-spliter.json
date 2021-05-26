@@ -1,0 +1,11 @@
+{
+  "component": true,
+  "usingComponents": {
+    "index-content-list-item": "/pages/circle/index-content-list-item",
+    "index-content-list-spliter": "/pages/circle/index-content-list-spliter",
+    "post-list-item": "/components/post-list/post-list-item",
+    "content-list": "/components/content-list/index",
+    "search-bar": "/components/search-bar",
+    "uni-fab": "/components/uni-fab/uni-fab"
+  }
+}

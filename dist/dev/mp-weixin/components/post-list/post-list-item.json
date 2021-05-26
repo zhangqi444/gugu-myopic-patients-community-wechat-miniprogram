@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "impression-bar-post": "/components/impression/impression-bar-post",
+    "parser": "/components/parser"
+  }
+}

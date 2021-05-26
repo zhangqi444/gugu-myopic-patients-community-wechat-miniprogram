@@ -1,0 +1,11 @@
+{
+  "componentGenerics": {
+    "scoped-slots-item": true,
+    "scoped-slots-spliter": true
+  },
+  "component": true,
+  "usingComponents": {
+    "list": "/components/list/index",
+    "uni-cell": "/components/uni-cell"
+  }
+}

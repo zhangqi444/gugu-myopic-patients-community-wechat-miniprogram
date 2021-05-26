@@ -1,0 +1,7 @@
+
+.input {
+	font-size: 18px;
+	height: 52px;
+	color: #171717;
+}
+

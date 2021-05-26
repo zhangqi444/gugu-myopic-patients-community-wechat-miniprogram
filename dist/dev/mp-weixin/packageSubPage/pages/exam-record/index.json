@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "echart-element": "/packageSubPage/components/echart-element",
+    "index-entry-item": "/packageSubPage/pages/exam-record/index-entry-item",
+    "uni-load-more": "/components/uni-load-more"
+  }
+}

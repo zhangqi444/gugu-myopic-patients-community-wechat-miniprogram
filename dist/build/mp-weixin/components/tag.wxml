@@ -1,0 +1,1 @@
+<view data-event-opts="{{[['tap',[['click',['$event']]]]]}}" class="components-tag data-v-190541ba" style="{{$root.s0}}" bindtap="__e"><text class="components-tag-text data-v-190541ba" style="{{$root.s1}}">{{text}}</text></view>

@@ -1,0 +1,11 @@
+{
+  "disableScroll": true,
+  "usingComponents": {
+    "txv-video": "plugin://tencentvideo/video",
+    "tag": "/components/tag",
+    "article-list": "/components/article-list/index",
+    "parser": "/components/parser",
+    "impression-bar": "/components/impression/impression-bar",
+    "comment-list-item": "/packageSubPage/components/comment-list/comment-list-item"
+  }
+}

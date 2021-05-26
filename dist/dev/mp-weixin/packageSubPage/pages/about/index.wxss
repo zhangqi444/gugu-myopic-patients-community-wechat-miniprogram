@@ -1,0 +1,23 @@
+
+.container.data-v-1439c166 {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	padding: 20px 0;
+}
+.icon.data-v-1439c166 {
+	width: 160px;
+	height: 60px;
+	margin-bottom: 30px;
+}
+

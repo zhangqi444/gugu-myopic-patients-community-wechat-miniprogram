@@ -1,0 +1,10 @@
+require('../../common/vendor.js');(global["webpackJsonp"]=global["webpackJsonp"]||[]).push([["packageSubPage/components/questions/wrapper"],{"15c2":function(t,e,n){"use strict";n.r(e);var o=n("3c39"),i=n("5bb0");for(var r in i)"default"!==r&&function(t){n.d(e,t,(function(){return i[t]}))}(r);n("387b");var u,c=n("f0c5"),s=Object(c["a"])(i["default"],o["b"],o["c"],!1,null,"1e54b625",null,!1,o["a"],u);e["default"]=s.exports},1768:function(t,e,n){"use strict";Object.defineProperty(e,"__esModule",{value:!0}),e.default=void 0;var o={name:"wrapper",data:function(){return{index:[]}},props:{question:{type:Object,default:function(){return{title:"",rowCount:0,columns:{},choices:{}}}},titleStyle:{type:Object,default:function(){}},descriptionStyle:{type:Object,default:function(){}},descriptionPosition:{type:String,default:"top"},showTitle:{type:Boolean},showDescription:{type:Boolean}},methods:{}};e.default=o},"387b":function(t,e,n){"use strict";var o=n("b651"),i=n.n(o);i.a},"3c39":function(t,e,n){"use strict";var o;n.d(e,"b",(function(){return i})),n.d(e,"c",(function(){return r})),n.d(e,"a",(function(){return o}));var i=function(){var t=this,e=t.$createElement,n=(t._self._c,t.showTitle?t.__get_style([t.titleStyle]):null),o=t.showDescription&&"top"===t.descriptionPosition?t.__get_style([t.descriptionStyle]):null,i=t.showDescription&&"bottom"===t.descriptionPosition?t.__get_style([t.descriptionStyle]):null;t.$mp.data=Object.assign({},{$root:{s0:n,s1:o,s2:i}})},r=[]},"5bb0":function(t,e,n){"use strict";n.r(e);var o=n("1768"),i=n.n(o);for(var r in o)"default"!==r&&function(t){n.d(e,t,(function(){return o[t]}))}(r);e["default"]=i.a},b651:function(t,e,n){}}]);
+;(global["webpackJsonp"] = global["webpackJsonp"] || []).push([
+    'packageSubPage/components/questions/wrapper-create-component',
+    {
+        'packageSubPage/components/questions/wrapper-create-component':(function(module, exports, __webpack_require__){
+            __webpack_require__('543d')['createComponent'](__webpack_require__("15c2"))
+        })
+    },
+    [['packageSubPage/components/questions/wrapper-create-component']]
+]);

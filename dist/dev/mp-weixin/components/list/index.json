@@ -1,0 +1,10 @@
+{
+  "component": true,
+  "usingComponents": {
+    "uni-list": "/components/uni-list",
+    "uni-cell": "/components/uni-cell",
+    "uni-refresh": "/components/uni-refresh",
+    "uni-load-more": "/components/uni-load-more",
+    "no-data": "/components/nodata"
+  }
+}

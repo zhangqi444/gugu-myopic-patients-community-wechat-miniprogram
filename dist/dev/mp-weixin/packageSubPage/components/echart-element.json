@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "parser": "/components/parser",
+    "uni-ec-canvas": "/packageSubPage/components/uni-ec-canvas/uni-ec-canvas"
+  }
+}
