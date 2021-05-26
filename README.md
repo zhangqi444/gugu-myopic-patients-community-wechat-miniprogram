@@ -1,7 +1,10 @@
 <img src="https://user-images.githubusercontent.com/5424267/119736375-75dd1f00-be32-11eb-8012-ebece6238f7c.png" alt="Gugu logo" width="100" height="100" align="right" />
 
+
 # 咕咕
 > 儿童青少年近视防控患者社区微信小程序
+> 
+> ‼️ **请尽量将本仓库作为示例代码参考，而不是将其用于生产环境**
 
 <p align="left">
   <img src="https://img.shields.io/badge/platforms-ios%20%7C%20android-blue"/>
@@ -9,6 +12,10 @@
   <img src="https://img.shields.io/badge/maintained%3F-no-red.svg" alt="Gugu is not under maintained anymore." />
   <img src="https://img.shields.io/badge/ask%20me-anything-1abc9c.svg" alt="Ask Me Anything." />
 </p>
+
+<a href="https://github.com/zhangqi444/gugu-myopic-patients-community-wechat-miniprogram" target="_blank">文档</a>
+|
+<a href="https://github.com/zhangqi444/gugu-myopic-patients-community-wechat-miniprogram/blob/master/README-en-US.md" target="_blank">Doc</a>
 
 ## 背景
 
@@ -122,18 +129,11 @@ npm run build:mp-weixin
 
 ## More Information
 
-- Read the [documentation](https://hexo.io/)
-- Visit the [Awesome Hexo](https://github.com/hexojs/awesome-hexo) list
-- Find solutions in [troubleshooting](https://hexo.io/docs/troubleshooting.html)
-- Join discussion on [Google Group](https://groups.google.com/group/hexo), [Discord](https://discord.gg/teM2Anj), [Gitter](https://gitter.im/hexojs/hexo) or [Telegram](https://t.me/hexojs)
-- See the [plugin list](https://hexo.io/plugins/) and the [theme list](https://hexo.io/themes/) on wiki
-- Follow [@hexojs](https://twitter.com/hexojs) for latest news
+
 
 ## Discussions
 
-We welcome you to join the development of Hexo. Please see [contributing document](https://hexo.io/docs/contributing). 🤗
-
-Also, we welcome PR or issue to [official-plugins](https://github.com/hexojs).
+如您有任何问题，欢迎在项目中提交issue，我会在第一时间给与回复。
 
 ## Contributors
 
