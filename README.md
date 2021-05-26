@@ -3,6 +3,13 @@
 # 咕咕
 > 儿童青少年近视防控患者社区微信小程序
 
+<p align="left">
+  <img src="https://img.shields.io/badge/platforms-ios%20%7C%20android-blue"/>
+  <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="Gugu is released under the MIT license." />
+  <img src="https://img.shields.io/badge/maintained%3F-no-red.svg" alt="Gugu is not under maintained anymore." />
+  <img src="https://img.shields.io/badge/ask%20me-anything-1abc9c.svg" alt="Ask Me Anything." />
+</p>
+
 ## 背景
 
 ### 什么是儿童青少年近视防控？
