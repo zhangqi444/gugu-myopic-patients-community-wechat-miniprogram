@@ -7,6 +7,7 @@
 > ‼️ **请尽量将本仓库作为示例代码参考，而不是将其用于生产环境**
 
 <p align="left">
+  <img src="https://img.shields.io/badge/node-%3E%3D6.0.0-brightgreen"/>
   <img src="https://img.shields.io/badge/platforms-ios%20%7C%20android-blue"/>
   <img src="https://img.shields.io/badge/license-MIT-green.svg" alt="Gugu is released under the MIT license." />
   <img src="https://img.shields.io/badge/maintained%3F-no-red.svg" alt="Gugu is not under maintained anymore." />
