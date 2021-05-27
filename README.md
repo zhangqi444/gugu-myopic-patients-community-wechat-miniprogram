@@ -71,9 +71,9 @@
     <td class="tg-0pky">🟩</td>
     <td class="tg-0pky">🟧</td>
     <td class="tg-0pky" rowspan="3">
-	<img src="https://user-images.githubusercontent.com/5424267/119745587-4c78bf00-be43-11eb-9ac3-4e2fd4703645.png" width="100" />
-	<img src="https://user-images.githubusercontent.com/5424267/119745844-dde83100-be43-11eb-9129-485a3306d52e.png" width="100" />
-	<img src="https://user-images.githubusercontent.com/5424267/119745836-d7f25000-be43-11eb-834d-01a80ae5b55e.png" width="100" />
+	<img src="https://user-images.githubusercontent.com/5424267/119745587-4c78bf00-be43-11eb-9ac3-4e2fd4703645.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119745844-dde83100-be43-11eb-9129-485a3306d52e.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119745836-d7f25000-be43-11eb-834d-01a80ae5b55e.png" width="80" />
     </td>
   </tr>
   <tr>
@@ -93,12 +93,12 @@
     <td class="tg-0pky">🟩</td>
     <td class="tg-0pky">🟩</td>
     <td class="tg-0pky" rowspan="6">
-	<img src="https://user-images.githubusercontent.com/5424267/119746982-94e5ac00-be46-11eb-88b5-515af647a94d.jpg" width="100" />
-	<img src="https://user-images.githubusercontent.com/5424267/119746986-97480600-be46-11eb-90c2-af32a4b2dac4.jpg" width="100" />
-	<img src="https://user-images.githubusercontent.com/5424267/119746994-9a42f680-be46-11eb-8de7-d794978d4969.png" width="100" />
-	<img src="https://user-images.githubusercontent.com/5424267/119746998-9c0cba00-be46-11eb-99f6-4c0ea56b11d4.png" width="100" />
-	<img src="https://user-images.githubusercontent.com/5424267/119747000-9ca55080-be46-11eb-9ad5-e45fb902ab22.png" width="100" />
-	<img src="https://user-images.githubusercontent.com/5424267/119746996-9b742380-be46-11eb-85a4-769dd3a651c2.png" width="100" />
+	<img src="https://user-images.githubusercontent.com/5424267/119746982-94e5ac00-be46-11eb-88b5-515af647a94d.jpg" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119746986-97480600-be46-11eb-90c2-af32a4b2dac4.jpg" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119746994-9a42f680-be46-11eb-8de7-d794978d4969.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119746998-9c0cba00-be46-11eb-99f6-4c0ea56b11d4.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119747000-9ca55080-be46-11eb-9ad5-e45fb902ab22.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119746996-9b742380-be46-11eb-85a4-769dd3a651c2.png" width="80" />
     </td>
   </tr>
   <tr>
@@ -128,49 +128,90 @@
   </tr>
 	
   <tr>
-    <td class="tg-0pky" rowspan="6">患者社区</td>
+    <td class="tg-0pky" rowspan="5">患者社区</td>
     <td class="tg-0pky">发帖，文字、富文本</td>
     <td class="tg-0pky">🟩</td>
     <td class="tg-0pky">🟧</td>
-    <td class="tg-0pky" rowspan="6">
-	<img src="https://user-images.githubusercontent.com/5424267/119746982-94e5ac00-be46-11eb-88b5-515af647a94d.jpg" width="100" />
-	<img src="https://user-images.githubusercontent.com/5424267/119746986-97480600-be46-11eb-90c2-af32a4b2dac4.jpg" width="100" />
-	<img src="https://user-images.githubusercontent.com/5424267/119746994-9a42f680-be46-11eb-8de7-d794978d4969.png" width="100" />
-	<img src="https://user-images.githubusercontent.com/5424267/119746998-9c0cba00-be46-11eb-99f6-4c0ea56b11d4.png" width="100" />
-	<img src="https://user-images.githubusercontent.com/5424267/119747000-9ca55080-be46-11eb-9ad5-e45fb902ab22.png" width="100" />
-	<img src="https://user-images.githubusercontent.com/5424267/119746996-9b742380-be46-11eb-85a4-769dd3a651c2.png" width="100" />
+    <td class="tg-0pky" rowspan="5">
+	<img src="https://user-images.githubusercontent.com/5424267/119758853-17c53180-be5c-11eb-9562-a8fd00e04b04.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119758862-198ef500-be5c-11eb-9189-9dfd0b199488.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119758863-1a278b80-be5c-11eb-84e0-150f084832a2.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119758865-1ac02200-be5c-11eb-82a6-71412e002f6a.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119758868-1bf14f00-be5c-11eb-9abe-01e25ee4fb42.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119758870-1bf14f00-be5c-11eb-9ce8-3c3bccb2b2de.png" width="80" />
     </td>
   </tr>
   <tr>
-    <td class="tg-0pky">帖子编辑</td>
+    <td class="tg-0pky">帖子编辑、删除</td>
     <td class="tg-0pky">🟩</td>
-    <td class="tg-0pky">🟥</td>
+    <td class="tg-0pky">🟧</td>
   </tr>
   <tr>
-    <td class="tg-0pky">帖子点赞、评论、收藏、分享</td>
+    <td class="tg-0pky">帖子点赞、收藏、分享</td>
     <td class="tg-0pky">🟩</td>
     <td class="tg-0pky">🟩</td>
   </tr>
   <tr>
     <td class="tg-0pky">帖子评论，评论回复、点赞</td>
     <td class="tg-0pky">🟩</td>
-    <td class="tg-0pky">🟩</td>
+    <td class="tg-0pky">🟧</td>
   </tr>
+  <tr>
+    <td class="tg-0pky">话题</td>
+    <td class="tg-0pky">🟩</td>
+    <td class="tg-0pky">🟧</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky" rowspan="6">健康工具</td>
+    <td class="tg-0pky">评测</td>
+    <td class="tg-0pky">🟩</td>
+    <td class="tg-0pky">🟩</td>
+    <td class="tg-0pky" rowspan="1">
+	<img src="https://user-images.githubusercontent.com/5424267/119760240-7ee3e580-be5e-11eb-9b95-a982339dc39a.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119760243-7f7c7c00-be5e-11eb-9bd2-62684130a752.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119760246-80151280-be5e-11eb-9649-1acb1f973b3b.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119760247-80ada900-be5e-11eb-8bca-4e3276c5b6c2.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119760249-81463f80-be5e-11eb-87ec-f867ba7972fe.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119760251-81ded600-be5e-11eb-980f-493ba05758d9.png" width="80" />
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">病历管理</td>
+    <td class="tg-0pky">🟩</td>
+    <td class="tg-0pky">🟧</td>
+    <td class="tg-0pky" rowspan="1">
+	<img src="https://user-images.githubusercontent.com/5424267/119759575-59a2a780-be5d-11eb-8c7a-89e610497418.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119759580-5ad3d480-be5d-11eb-996a-87c7dacf9d37.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119759582-5b6c6b00-be5d-11eb-9d84-1921ab526be1.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119759587-5c9d9800-be5d-11eb-8109-68ee4658a5d1.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119759588-5c9d9800-be5d-11eb-8abf-31dfb955b422.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119759585-5c050180-be5d-11eb-8551-b6c2d97173d4.png" height="80" />
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">打卡</td>
+    <td class="tg-0pky">🟧</td>
+    <td class="tg-0pky">🟥</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">帖子评论，评论回复、点赞</td>
+    <td class="tg-0pky">🟩</td>
+    <td class="tg-0pky">🟧</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">话题</td>
+    <td class="tg-0pky">🟩</td>
+    <td class="tg-0pky">🟧</td>
+  </tr>
+</tbody>
+</table>
+
+
   <tr>
     <td class="tg-0pky">审核</td>
     <td class="tg-0pky">🟩</td>
     <td class="tg-0pky">🟩</td>
   </tr>
-  <tr>
-    <td class="tg-0pky">话题</td>
-    <td class="tg-0pky">🟩</td>
-    <td class="tg-0pky">🟩</td>
-  </tr>
-</tbody>
-</table>
-
-- 工具
- - 评测
 
 - ⚠️ 认证
 - ⚠️ 打卡
