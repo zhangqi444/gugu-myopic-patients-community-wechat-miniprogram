@@ -58,6 +58,9 @@
 
 ### 项目状态
 
+<details>
+  <summary>查看详情</summary>
+
 > 完成: 🟩  部分实现: 🟧  待实现: 🟨  未实现: 🟥
 
 <table class="tg">
@@ -291,6 +294,7 @@
 </tbody>
 </table>
 
+</details>
 
 ## 技术栈
 
