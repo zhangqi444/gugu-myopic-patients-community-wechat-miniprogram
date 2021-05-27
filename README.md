@@ -132,7 +132,21 @@
     <td class="tg-0pky">🟩</td>
     <td class="tg-0pky">🟩</td>
   </tr>
-	
+
+  <tr>
+    <td class="tg-0pky" rowspan="1">就医服务</td>
+    <td class="tg-0pky">医生信息、医院信息、挂号、智能问诊</td>
+    <td class="tg-0pky">🟧</td>
+    <td class="tg-0pky">🟥</td>
+    <td class="tg-0pky" rowspan="1">
+	<img src="https://user-images.githubusercontent.com/5424267/119762586-d84e1380-be62-11eb-8849-b101a5c92cfd.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119762590-da17d700-be62-11eb-8d81-eb3dc60c0b45.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119762591-dab06d80-be62-11eb-9cbc-f673b957fd89.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119762592-dab06d80-be62-11eb-84ad-a6a4d91d874c.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119762814-47c40300-be63-11eb-98cd-79daf889dd04.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119762817-498dc680-be63-11eb-81c2-96198b2ddfb1.png" width="80" />
+    </td>
+  </tr>
   <tr>
     <td class="tg-0pky" rowspan="5">患者社区</td>
     <td class="tg-0pky">发帖，文字、富文本</td>
@@ -232,21 +246,51 @@
 	<img src="https://user-images.githubusercontent.com/5424267/119761967-a7b9aa00-be61-11eb-901c-7e90c3024c0a.png" width="80" />
     </td>
   </tr>
+  <tr>
+    <td class="tg-0pky" rowspan="5">其他</td>
+    <td class="tg-0pky">用户认证</td>
+    <td class="tg-0pky">🟩</td>
+    <td class="tg-0pky">🟥</td>
+    <td class="tg-0pky" rowspan="1">
+	<img src="https://user-images.githubusercontent.com/5424267/119763134-ccaf1c80-be63-11eb-9b63-573e6dd5b26d.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119763137-cde04980-be63-11eb-9df2-459ac02088e1.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119763138-cde04980-be63-11eb-9062-c563c895cfe5.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119763139-ce78e000-be63-11eb-97d9-719311156915.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119763142-cfaa0d00-be63-11eb-99eb-3b58e0df84e2.png" width="80" />
+    </td>
+  </tr>
+
+  <tr>
+    <td class="tg-0pky">个人中心</td>
+    <td class="tg-0pky">🟩</td>
+    <td class="tg-0pky">🟧</td>
+    <td class="tg-0pky" rowspan="1" >
+	<img src="https://user-images.githubusercontent.com/5424267/119762992-983b6080-be63-11eb-8a8f-aa707eeb20d8.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119762996-98d3f700-be63-11eb-92c7-51dd24854480.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119762997-996c8d80-be63-11eb-99c6-7898323306d2.png" width="80" />
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">消息推送</td>
+    <td class="tg-0pky">🟥</td>
+    <td class="tg-0pky">🟥</td>
+    <td class="tg-0pky" rowspan="1" />
+  </tr>
+  <tr>
+    <td class="tg-0pky">微信登录</td>
+    <td class="tg-0pky">N/A</td>
+    <td class="tg-0pky">🟩</td>
+    <td class="tg-0pky" rowspan="1" />
+  </tr>  
+  <tr>
+    <td class="tg-0pky">内容审核</td>
+    <td class="tg-0pky">🟩</td>
+    <td class="tg-0pky">🟩</td>
+    <td class="tg-0pky" rowspan="1" />
+  </tr>
 </tbody>
 </table>
 
-
-  <tr>
-    <td class="tg-0pky">审核</td>
-    <td class="tg-0pky">🟩</td>
-    <td class="tg-0pky">🟩</td>
-  </tr>
-
-- ⚠️ 认证
-- 其他
- - ✅ 个人主页
- - ⚠️ 消息推送
- - ✅ 微信登录
 
 ## 技术栈
 
@@ -290,19 +334,18 @@ npm run build:mp-weixin
 2. 打开微信开发者工具，联系管理员获取微信开发appid，打开项目，指定目录并填入appid
 3. 在HBuilder中进行开发，在微信开发者工具中进行调试
 
-## More Information
+## 更多信息
 
 
-
-## Discussions
+## 讨论
 
 如您有任何问题，欢迎在项目中提交issue，我会在第一时间给与回复。
 
-## Contributors
+## 贡献者
 
 [@Pas0412](https://github.com/Pas0412), [@zhangqi444](https://github.com/zhangqi444), [@zyc95 修仙大橙子](https://github.com/zyc95)
 
-## 📄 License
+## 📄 协议
 
 该项目基于MIT License开源.
 
