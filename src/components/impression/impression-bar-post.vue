@@ -53,7 +53,7 @@
 				}
 			},
 			comment(isAdding) {
-				uni.navigateTo({ url: `${PAGES.POST.path}?postId=${this.item._id}&isAdding=${!!isAdding}` });
+				uni.navigateTo({ url: `${PAGES.POST.path}?id=${this.item._id}&isAdding=${!!isAdding}` });
 			},
 			async thumb() {
 				await addThumb(this.item, this.self, addThumbPost, POST_MUTATION_UPDATE_ONE);

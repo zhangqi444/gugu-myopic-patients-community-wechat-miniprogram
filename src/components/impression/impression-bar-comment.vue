@@ -51,7 +51,7 @@
 	import { addThumb, addCollect } from "@/common/helpers/actionHelper";
 	import { onboardByWechatUserInfo } from "@/common/helpers/authHelper";
 	import { parseAuthor } from "@/common/helpers/authorHelper";
-	import { ARTICLE_MUTAT/lkON_UPDATE_ONE } from "@/store/articleStore";
+	import { ARTICLE_MUTATION_UPDATE_ONE } from "@/store/articleStore";
 	import { POST_MUTATION_UPDATE_ONE } from "@/store/postStore";
 	
 	export default {

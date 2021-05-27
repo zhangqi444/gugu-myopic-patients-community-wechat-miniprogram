@@ -217,17 +217,16 @@
 						input.nestedComment = isTargetNested ? this.commentTarget._id : null;
 					}
 					
-					let result = await addComment(input);
-					result = result && result.data && result.data.addComment;
-					if(result._id) {
+					let result = await addPostComment(input);
+					result = result && result.data && result.data.addPostComment;
+					if(result && result._id) {
 						this.$refs['impressionBarComment'].clearInput();
-						this.$store.commit(COMMENT_MUTATION_UPDATE_ONE, { item: result });
+						this.$store.commit(POST_COMMENT_MUTATION_UPDATE_ONE, { item: result });
 						this.$refs["contentList"].unshiftLocalIdList(result._id);
 						this.commentTarget = null;
 					}
 				} catch(e) {
 					console.error(e);
-					callback(null);
 				}				
 			},
 		}
