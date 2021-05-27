@@ -48,12 +48,11 @@
 
 ## 功能概览
 
-![demo1](https://user-images.githubusercontent.com/5424267/119735115-bb98e800-be30-11eb-9850-bb395fc8ca92.gif)![demo5](https://user-images.githubusercontent.com/5424267/119735710-9bb5f400-be31-11eb-815f-69ed18d8e304.gif)![demo2](https://user-images.githubusercontent.com/5424267/119735718-9e184e00-be31-11eb-9124-828a676f637e.gif)![demo3](https://user-images.githubusercontent.com/5424267/119735724-9f497b00-be31-11eb-9a30-406904e73a72.gif)![demo4](https://user-images.githubusercontent.com/5424267/119735747-a3759880-be31-11eb-9a40-58519809a25e.gif)
+<img src="https://user-images.githubusercontent.com/5424267/119746271-ee4cdb80-be44-11eb-8c87-dc69fcfc4906.gif" width="200" />
 
+### 项目状态
 
-完成: 🟩  部分实现: 🟧  待实现: 🟨  未实现: 🟥
-
-
+> 完成: 🟩  部分实现: 🟧  待实现: 🟨  未实现: 🟥
 
 <table class="tg">
 <thead>
@@ -72,9 +71,9 @@
     <td class="tg-0pky">🟩</td>
     <td class="tg-0pky">🟧</td>
     <td class="tg-0pky" rowspan="3">
-	<img src="https://user-images.githubusercontent.com/5424267/119745587-4c78bf00-be43-11eb-9ac3-4e2fd4703645.png" width="200" />
-	<img src="https://user-images.githubusercontent.com/5424267/119745844-dde83100-be43-11eb-9129-485a3306d52e.png" width="200" />
-	<img src="https://user-images.githubusercontent.com/5424267/119745836-d7f25000-be43-11eb-834d-01a80ae5b55e.png" width="200" />
+	<img src="https://user-images.githubusercontent.com/5424267/119745587-4c78bf00-be43-11eb-9ac3-4e2fd4703645.png" width="100" />
+	<img src="https://user-images.githubusercontent.com/5424267/119745844-dde83100-be43-11eb-9129-485a3306d52e.png" width="100" />
+	<img src="https://user-images.githubusercontent.com/5424267/119745836-d7f25000-be43-11eb-834d-01a80ae5b55e.png" width="100" />
     </td>
   </tr>
   <tr>
@@ -87,32 +86,51 @@
     <td class="tg-0pky">🟩</td>
     <td class="tg-0pky">🟥</td>
   </tr>
+
+  <tr>
+    <td class="tg-0pky" rowspan="6">患者教育</td>
+    <td class="tg-0pky">富文本文章</td>
+    <td class="tg-0pky">🟩</td>
+    <td class="tg-0pky">🟧</td>
+    <td class="tg-0pky" rowspan="6">
+	<img src="https://user-images.githubusercontent.com/5424267/119746982-94e5ac00-be46-11eb-88b5-515af647a94d.jpg" width="100" />
+	<img src="https://user-images.githubusercontent.com/5424267/119746986-97480600-be46-11eb-90c2-af32a4b2dac4.jpg" width="100" />
+	<img src="https://user-images.githubusercontent.com/5424267/119746994-9a42f680-be46-11eb-8de7-d794978d4969.png" width="100" />
+	<img src="https://user-images.githubusercontent.com/5424267/119746998-9c0cba00-be46-11eb-99f6-4c0ea56b11d4.png" width="100" />
+	<img src="https://user-images.githubusercontent.com/5424267/119747000-9ca55080-be46-11eb-9ad5-e45fb902ab22.png" width="100" />
+	<img src="https://user-images.githubusercontent.com/5424267/119746996-9b742380-be46-11eb-85a4-769dd3a651c2.png" width="100" />
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">视频文章</td>
+    <td class="tg-0pky">🟩</td>
+    <td class="tg-0pky">🟩</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">相关文章</td>
+    <td class="tg-0pky">🟩</td>
+    <td class="tg-0pky">🟩</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">文章点赞、收藏、分享</td>
+    <td class="tg-0pky">🟩</td>
+    <td class="tg-0pky">🟩</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">文章评论，评论回复、点赞</td>
+    <td class="tg-0pky">🟩</td>
+    <td class="tg-0pky">🟥</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">标签</td>
+    <td class="tg-0pky">🟩</td>
+    <td class="tg-0pky">🟥</td>
+  </tr>
 </tbody>
 </table>
 
-| 功能 | 子功能  | 产品状态 |  开发状态 | 原型  |
-|----------|---|---|---|---|
-| 首页 |  - ✅ 搜索v1
- - ✅ 信息流
- - ⚠️ 顶部轮播图  |   |   |   |
-|          |   |   |   |   |
-|          |   |   |   |   |
-
-### 首页
- 
- - ✅ 搜索v1
- - ✅ 信息流
- - ⚠️ 顶部轮播图
 
 
-
-
-## 患者教育
- - ✅ 文章支持视频，富文本
- - ✅ 文章点赞、评论、收藏、分享❌
- - ✅ 评论点赞、回复
- - ✅ 相关文章
- - ✅ 标签
 - 社区
  - 发帖
   - 文字
