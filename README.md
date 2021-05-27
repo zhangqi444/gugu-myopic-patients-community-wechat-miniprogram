@@ -88,10 +88,10 @@
   </tr>
 
   <tr>
-    <td class="tg-0pky" rowspan="6">患者教育</td>
+    <td class="tg-0pky" rowspan="6">科普患教</td>
     <td class="tg-0pky">富文本文章</td>
     <td class="tg-0pky">🟩</td>
-    <td class="tg-0pky">🟧</td>
+    <td class="tg-0pky">🟩</td>
     <td class="tg-0pky" rowspan="6">
 	<img src="https://user-images.githubusercontent.com/5424267/119746982-94e5ac00-be46-11eb-88b5-515af647a94d.jpg" width="100" />
 	<img src="https://user-images.githubusercontent.com/5424267/119746986-97480600-be46-11eb-90c2-af32a4b2dac4.jpg" width="100" />
@@ -119,24 +119,56 @@
   <tr>
     <td class="tg-0pky">文章评论，评论回复、点赞</td>
     <td class="tg-0pky">🟩</td>
-    <td class="tg-0pky">🟥</td>
+    <td class="tg-0pky">🟩</td>
   </tr>
   <tr>
     <td class="tg-0pky">标签</td>
     <td class="tg-0pky">🟩</td>
+    <td class="tg-0pky">🟩</td>
+  </tr>
+	
+  <tr>
+    <td class="tg-0pky" rowspan="6">患者社区</td>
+    <td class="tg-0pky">发帖，文字、富文本</td>
+    <td class="tg-0pky">🟩</td>
+    <td class="tg-0pky">🟧</td>
+    <td class="tg-0pky" rowspan="6">
+	<img src="https://user-images.githubusercontent.com/5424267/119746982-94e5ac00-be46-11eb-88b5-515af647a94d.jpg" width="100" />
+	<img src="https://user-images.githubusercontent.com/5424267/119746986-97480600-be46-11eb-90c2-af32a4b2dac4.jpg" width="100" />
+	<img src="https://user-images.githubusercontent.com/5424267/119746994-9a42f680-be46-11eb-8de7-d794978d4969.png" width="100" />
+	<img src="https://user-images.githubusercontent.com/5424267/119746998-9c0cba00-be46-11eb-99f6-4c0ea56b11d4.png" width="100" />
+	<img src="https://user-images.githubusercontent.com/5424267/119747000-9ca55080-be46-11eb-9ad5-e45fb902ab22.png" width="100" />
+	<img src="https://user-images.githubusercontent.com/5424267/119746996-9b742380-be46-11eb-85a4-769dd3a651c2.png" width="100" />
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">帖子编辑</td>
+    <td class="tg-0pky">🟩</td>
     <td class="tg-0pky">🟥</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">帖子点赞、评论、收藏、分享</td>
+    <td class="tg-0pky">🟩</td>
+    <td class="tg-0pky">🟩</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">帖子评论，评论回复、点赞</td>
+    <td class="tg-0pky">🟩</td>
+    <td class="tg-0pky">🟩</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">审核</td>
+    <td class="tg-0pky">🟩</td>
+    <td class="tg-0pky">🟩</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">话题</td>
+    <td class="tg-0pky">🟩</td>
+    <td class="tg-0pky">🟩</td>
   </tr>
 </tbody>
 </table>
 
-
-
-- 社区
- - 发帖
-  - 文字
-  - 富文本
-  - 图片
- - 帖子点赞、评论、收藏、分享
 - 工具
  - 评测
 
