@@ -51,8 +51,52 @@
 ![demo1](https://user-images.githubusercontent.com/5424267/119735115-bb98e800-be30-11eb-9850-bb395fc8ca92.gif)![demo5](https://user-images.githubusercontent.com/5424267/119735710-9bb5f400-be31-11eb-815f-69ed18d8e304.gif)![demo2](https://user-images.githubusercontent.com/5424267/119735718-9e184e00-be31-11eb-9124-828a676f637e.gif)![demo3](https://user-images.githubusercontent.com/5424267/119735724-9f497b00-be31-11eb-9a30-406904e73a72.gif)![demo4](https://user-images.githubusercontent.com/5424267/119735747-a3759880-be31-11eb-9a40-58519809a25e.gif)
 
 
-已实现：✅  待实现：⚠️  无法支持：❌
+完成: 🟩  部分实现: 🟧  待实现: 🟨  未实现: 🟥
 
+
+
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-0pky">主功能</th>
+    <th class="tg-0pky">子功能</th>
+    <th class="tg-0pky">产品状态</th>
+    <th class="tg-0pky">研发状态</th>
+    <th class="tg-0pky">原型</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0pky" rowspan="3">首页</td>
+    <td class="tg-0pky">搜索</td>
+    <td class="tg-0pky">🟩</td>
+    <td class="tg-0pky">🟧</td>
+    <td class="tg-0pky" rowspan="3">
+	<img src="https://user-images.githubusercontent.com/5424267/119745587-4c78bf00-be43-11eb-9ac3-4e2fd4703645.png" width="200" />
+	<img src="https://user-images.githubusercontent.com/5424267/119745844-dde83100-be43-11eb-9129-485a3306d52e.png" width="200" />
+	<img src="https://user-images.githubusercontent.com/5424267/119745836-d7f25000-be43-11eb-834d-01a80ae5b55e.png" width="200" />
+    </td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">信息流</td>
+    <td class="tg-0pky">🟩</td>
+    <td class="tg-0pky">🟩</td>
+  </tr>
+  <tr>
+    <td class="tg-0pky">轮播图</td>
+    <td class="tg-0pky">🟩</td>
+    <td class="tg-0pky">🟥</td>
+  </tr>
+</tbody>
+</table>
+
+| 功能 | 子功能  | 产品状态 |  开发状态 | 原型  |
+|----------|---|---|---|---|
+| 首页 |  - ✅ 搜索v1
+ - ✅ 信息流
+ - ⚠️ 顶部轮播图  |   |   |   |
+|          |   |   |   |   |
+|          |   |   |   |   |
 
 ### 首页
  
@@ -61,7 +105,9 @@
  - ⚠️ 顶部轮播图
 
 
-- 患者教育
+
+
+## 患者教育
  - ✅ 文章支持视频，富文本
  - ✅ 文章点赞、评论、收藏、分享❌
  - ✅ 评论点赞、回复
