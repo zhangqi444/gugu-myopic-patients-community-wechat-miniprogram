@@ -3,6 +3,8 @@
 
 # 咕咕
 > 儿童青少年近视防控患者社区微信小程序——基于uniapp的客户端实现
+>
+> 相关项目 - [服务器](https://github.com/zhangqi444/gugu-myopic-patients-community-backend) | [CMS](https://github.com/zhangqi444/gugu-myopic-patients-community-cms-admin)
 > 
 > ‼️ **请尽量将本仓库作为示例代码参考，而不是将其用于生产环境**
 
@@ -338,9 +340,6 @@ npm run build:mp-weixin
 1. 下载微信开发者工具https://developers.weixin.qq.com/miniprogram/dev/devtools/download.html
 2. 打开微信开发者工具，联系管理员获取微信开发appid，打开项目，指定目录并填入appid
 3. 在HBuilder中进行开发，在微信开发者工具中进行调试
-
-## 更多信息
-
 
 ## 讨论
 
