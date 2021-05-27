@@ -48,7 +48,13 @@
 
 ## 功能概览
 
-<img src="https://user-images.githubusercontent.com/5424267/119746271-ee4cdb80-be44-11eb-8c87-dc69fcfc4906.gif" width="200" />
+<div>
+<img src="https://user-images.githubusercontent.com/5424267/119761374-84dac600-be60-11eb-8be8-0cfc7c07e18a.gif" width="100" />
+<img src="https://user-images.githubusercontent.com/5424267/119761368-83110280-be60-11eb-8263-a1298094e15d.gif" width="100" />
+<img src="https://user-images.githubusercontent.com/5424267/119761362-7ee4e500-be60-11eb-81ce-6750d257f026.gif" width="100" />
+<img src="https://user-images.githubusercontent.com/5424267/119761346-79879a80-be60-11eb-85d7-82a08e4d7b2d.gif" width="100" />
+<img src="https://user-images.githubusercontent.com/5424267/119746271-ee4cdb80-be44-11eb-8c87-dc69fcfc4906.gif" width="100" />
+</div>
 
 ### 项目状态
 
@@ -162,7 +168,7 @@
     <td class="tg-0pky">🟧</td>
   </tr>
   <tr>
-    <td class="tg-0pky" rowspan="6">健康工具</td>
+    <td class="tg-0pky" rowspan="3">健康工具</td>
     <td class="tg-0pky">评测</td>
     <td class="tg-0pky">🟩</td>
     <td class="tg-0pky">🟩</td>
@@ -192,16 +198,39 @@
     <td class="tg-0pky">打卡</td>
     <td class="tg-0pky">🟧</td>
     <td class="tg-0pky">🟥</td>
+    <td class="tg-0pky" rowspan="1">
+	<img src="https://user-images.githubusercontent.com/5424267/119761043-f5cdae00-be5f-11eb-9d6d-d4e5653e1e07.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119761044-f6664480-be5f-11eb-9b9b-e80d210b53a3.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119761045-f6fedb00-be5f-11eb-96c6-57b0a016e683.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119761046-f6fedb00-be5f-11eb-8170-edd443b6dfe2.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119761048-f7977180-be5f-11eb-8868-a84f29b71e4b.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119761050-f8300800-be5f-11eb-9117-2493566172dc.png" width="80" />
+    </td>
   </tr>
+
   <tr>
-    <td class="tg-0pky">帖子评论，评论回复、点赞</td>
-    <td class="tg-0pky">🟩</td>
+    <td class="tg-0pky" rowspan="1">电商</td>
+    <td class="tg-0pky">评测</td>
     <td class="tg-0pky">🟧</td>
+    <td class="tg-0pky">🟥</td>
+    <td class="tg-0pky" rowspan="1">
+	<img src="https://user-images.githubusercontent.com/5424267/119761910-8a84db80-be61-11eb-8610-d62d9c60fc36.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119761911-8bb60880-be61-11eb-94b3-8871aa9bf914.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119761914-8ce73580-be61-11eb-92d0-ab881a5bf4f4.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119761915-8ce73580-be61-11eb-862a-8b16dd29b82c.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119761917-8e186280-be61-11eb-85c2-32c57f6ed6e2.png" width="80" />
+	<img src="https://user-images.githubusercontent.com/5424267/119761918-8eb0f900-be61-11eb-828c-86265285fff9.png" width="80" />
+    </td>
   </tr>
+	
   <tr>
-    <td class="tg-0pky">话题</td>
-    <td class="tg-0pky">🟩</td>
-    <td class="tg-0pky">🟧</td>
+    <td class="tg-0pky" rowspan="1">直播</td>
+    <td class="tg-0pky">评测</td>
+    <td class="tg-0pky">🟥</td>
+    <td class="tg-0pky">🟥</td>
+    <td class="tg-0pky" rowspan="1">
+	<img src="https://user-images.githubusercontent.com/5424267/119761967-a7b9aa00-be61-11eb-901c-7e90c3024c0a.png" width="80" />
+    </td>
   </tr>
 </tbody>
 </table>
@@ -214,9 +243,6 @@
   </tr>
 
 - ⚠️ 认证
-- ⚠️ 打卡
-- ⚠️ 电商
-- ⚠️ 直播
 - 其他
  - ✅ 个人主页
  - ⚠️ 消息推送
