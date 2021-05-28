@@ -6,7 +6,7 @@
 >
 > related projects - [backend](https://github.com/zhangqi444/gugu-myopic-patients-community-backend) | [CMS](https://github.com/zhangqi444/gugu-myopic-patients-community-cms-admin)
 > 
-> ‼️ **This project is better to be used as sample code for learning purpose, instead of in production.**
+> ‼️ **This project is better to be used as sample code for learning purpose, instead of an application in production.**
 
 <p align="left">
   <img src="https://img.shields.io/badge/node-%3E%3D6.0.0-brightgreen"/>
@@ -16,9 +16,9 @@
   <img src="https://img.shields.io/badge/ask%20me-anything-1abc9c.svg" alt="Ask Me Anything." />
 </p>
 
-<a href="https://github.com/zhangqi444/gugu-myopic-patients-community-wechat-miniprogram" target="_blank">文档</a>
+<a href="https://github.com/zhangqi444/gugu-myopic-patients-community-wechat-miniprogram" target="_blank">Doc</a>
 |
-<a href="https://github.com/zhangqi444/gugu-myopic-patients-community-wechat-miniprogram/blob/master/README-en-US.md" target="_blank">Doc</a>
+<a href="https://github.com/zhangqi444/gugu-myopic-patients-community-wechat-miniprogram/blob/master/README-en-US.md" target="_blank">中文文档</a>
 
 ## Background
 
@@ -46,11 +46,9 @@ More readings：
 
 ### What's Gugu？
 
-“咕咕”这个名字取自猫头鹰的叫声，我们希望通过这么一种可爱的、拟物化的方式，传达出对于孩子的关心与爱。咕咕以患者社区为核心，结合科普患教、健康管理工具等功能，致力于在近视防控领域为广大家长提供一站式的服务。
+Gugu('hoot of owl' in Chinese) is a partime project motivated by the severe situation of children myopia in China. This is a first try in China to build up a myopia control focued patient community through a mobile application. It also includes key features such as patient education content and eye health management tools, which are aimed to help the Chinese parents manage their children's myopia problem. 
 
-咕咕作为一个业余时间发起的项目，其中的不足之处非常之多。而在过去的调研中我们也没有发现成熟的应用可供参考，项目中很多的产品和技术方案又都具有实验性质。
-
-因为项目的可重用性不强，又与后端服务器相互耦合，我们过去一直选择了封闭开发的模式。但最终选择开源，还是希望能够抛砖引玉，对有志于近视防控或患者社区的朋友们能够有所启发和帮助。
+Gugu is an experiment, instead of a very well defined and ready to use product. We hope the UI/UX prototype and source code could help and inspire the people who are interested in either myopia control or patients community.
 
 ## Demo
 
@@ -67,7 +65,7 @@ More readings：
 <details>
   <summary>see more details</summary>
 
-> Done: 🟩  In-progress: 🟧  TODO: 🟥
+> Done: 🟩     In-progress: 🟧     TODO: 🟥
 
 <table class="tg">
 <thead>
@@ -181,7 +179,7 @@ More readings：
     <td class="tg-0pky">🟩</td>
   </tr>
   <tr>
-    <td class="tg-0pky">comment，reply, like comment, like reply</td>
+    <td class="tg-0pky">comment, reply, like comment, like reply</td>
     <td class="tg-0pky">🟩</td>
     <td class="tg-0pky">🟧</td>
   </tr>
@@ -247,7 +245,7 @@ More readings：
   </tr>
 	
   <tr>
-    <td class="tg-0pky" rowspan="1">Live</td>
+    <td class="tg-0pky" rowspan="1">live</td>
     <td class="tg-0pky"></td>
     <td class="tg-0pky">🟥</td>
     <td class="tg-0pky">🟥</td>
@@ -256,7 +254,7 @@ More readings：
     </td>
   </tr>
   <tr>
-    <td class="tg-0pky" rowspan="5">Others</td>
+    <td class="tg-0pky" rowspan="5">others</td>
     <td class="tg-0pky">user verification</td>
     <td class="tg-0pky">🟩</td>
     <td class="tg-0pky">🟥</td>
