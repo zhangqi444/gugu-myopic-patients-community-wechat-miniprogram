@@ -2,7 +2,7 @@
 
 
 # Gugu
-> An uniapp based WeChat Mini Program application for mypoia control in children. 
+> An uniapp based WeChat Mini Program application for myopia control in children. 
 >
 > related projects - [backend](https://github.com/zhangqi444/gugu-myopic-patients-community-backend) | [CMS](https://github.com/zhangqi444/gugu-myopic-patients-community-cms-admin)
 > 
