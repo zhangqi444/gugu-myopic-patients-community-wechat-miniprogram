@@ -18,7 +18,7 @@
 
 <a href="https://github.com/zhangqi444/gugu-myopic-patients-community-wechat-miniprogram" target="_blank">Doc</a>
 |
-<a href="https://github.com/zhangqi444/gugu-myopic-patients-community-wechat-miniprogram/blob/master/README-en-US.md" target="_blank">中文文档</a>
+<a href="https://github.com/zhangqi444/gugu-myopic-patients-community-wechat-miniprogram/blob/master/README-zh-CN.md" target="_blank">中文文档</a>
 
 ## Background
 
