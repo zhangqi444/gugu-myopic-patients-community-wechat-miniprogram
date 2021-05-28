@@ -313,7 +313,7 @@ Gugu is an experiment, instead of a very well defined and ready to use product. 
 - [surveyjs](https://github.com/surveyjs/survey-library)
 
 ### Installation
-This repo is a standard uniapp project，created from [uni-template-news](https://github.com/dcloudio/uni-template-news)。
+This repo is a standard uniapp project，created from [uni-template-news](https://github.com/dcloudio/uni-template-news).
 
 ```shell
 # Please follow the uniapp official guidance to set up thedevelopment environment，then run below command.
