@@ -38,11 +38,13 @@ More readings：
 - [Brien Holden Vision Institute](https://bhvi.org/)
 - [International Myopia Institute](https://myopiainstitute.org/) 
 
-### what's patients community?
+### What's patients community?
 
-社区，是个外来的词，最早由费孝通先生翻译自英文中的Community，它同家庭、宗族、国家等共同体一样是我们人类社会组织的一种形式，也是开展健康教育与医疗行为的重要场所。
+Patients community is the platform that allows patients to interact with other patients. It can provide the emotional support that is still a missing piece of the patient’s experience within the healthcare system. The natural development of emotional support from patient-to-patient connections could enhance emotional well-being, and therefore aid patients through recovery, or acceptance of what can follow.
 
-基于互联网的患者社区在概念上非常容易理解，是患者组织的一种最基本形式在互联网上的呈现。广义上来说，只要是一定数量的患者借助任意的互联网工具或平台聚集在了一起，并形成了一个相互交流影响的集体，那就可以称为互联网患者社区。世界范围内，最具有典型性的患者社区是[PatientsLikeMe](https://www.patientslikeme.com/).
+One of the most famous exapmles is [PatientsLikeMe](https://www.patientslikeme.com/), which is the world’s largest integrated community, health management, and real-world data platform. Through PatientsLikeMe, a growing community of more than 830,000 people with over 2,900 conditions share personal stories and information about their health, symptoms, and treatments, with a goal to improve the lives of all patients through knowledge derived from shared real-world experiences and outcomes. [2]
+
+[2]. PatientsLikeMe - Wikipedia. (2019). Retrieved 28 May 2021, from https://en.wikipedia.org/wiki/PatientsLikeMe
 
 ### What's Gugu？
 
