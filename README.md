@@ -327,14 +327,14 @@ npm install
 # This should be the most commonly used way for development.
 # Please add the configuration in `src/common/configs/development.js` for,
 # 1. backend server endpoint and,
-# 2 [Alibaba Cloud](https://us.alibabacloud.com/en) acess id & key.
+# 2. [Alibaba Cloud](https://us.alibabacloud.com/en) acess id & key.
 npm run dev:mp-weixin
 ```
 #### local development with local test backend server
 ```shell
 # Please add the configuration in `src/common/configs/local.js` for,
 # 1. backend server endpoint and,
-# 2 [Alibaba Cloud](https://us.alibabacloud.com/en) acess id & key.
+# 2. [Alibaba Cloud](https://us.alibabacloud.com/en) acess id & key.
 # Usually, you can use `http://localhost:7001/graphql` to access the local test backend server.
 npm run local:mp-weixin
 ```
@@ -342,7 +342,7 @@ npm run local:mp-weixin
 ```shell
 # Please add the configuration in `src/common/configs/production.js` for,
 # 1. backend server endpoint and,
-# 2 [Alibaba Cloud](https://us.alibabacloud.com/en) acess id & key.
+# 2. [Alibaba Cloud](https://us.alibabacloud.com/en) acess id & key.
 npm run build:mp-weixin
 ```
 ### Local debug
