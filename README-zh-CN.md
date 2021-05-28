@@ -16,9 +16,10 @@
   <img src="https://img.shields.io/badge/ask%20me-anything-1abc9c.svg" alt="Ask Me Anything." />
 </p>
 
-<a href="https://github.com/zhangqi444/gugu-myopic-patients-community-wechat-miniprogram" target="_blank">文档</a>
+<a href="https://github.com/zhangqi444/gugu-myopic-patients-community-wechat-miniprogram" target="_blank">Doc</a>
 |
-<a href="https://github.com/zhangqi444/gugu-myopic-patients-community-wechat-miniprogram/blob/master/README-en-US.md" target="_blank">Doc</a>
+<a href="https://github.com/zhangqi444/gugu-myopic-patients-community-wechat-miniprogram/blob/master/README-zh-CN.md" target="_blank">中文文档</a>
+
 
 ## 背景
 
