@@ -54,6 +54,8 @@ Gugu is an experiment, instead of a very well defined and ready to use product. 
 
 ## Demo
 
+Please see [this](https://fangs-project.webflow.io/gugu) for more details about the English version.
+
 <div>
 <img src="https://user-images.githubusercontent.com/5424267/119761374-84dac600-be60-11eb-8be8-0cfc7c07e18a.gif" width="100" />
 <img src="https://user-images.githubusercontent.com/5424267/119761368-83110280-be60-11eb-8263-a1298094e15d.gif" width="100" />
